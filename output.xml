@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2024-06-27T13:49:15.022950" rpa="false" schemaversion="5">
+<suite id="s1" name="Home" source="/Users/arklok/Documents/Qa/projeto/fbank/abrir/home.robot">
+<test id="s1-t1" name="login" line="9">
+<kw name="Abrindo o app" owner="starconect">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>app=/Users/arklok/Downloads/app-fbank_.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-06-27T13:49:15.165090" elapsed="6.578652"/>
+</kw>
+<status status="PASS" start="2024-06-27T13:49:15.164861" elapsed="6.579420"/>
+</kw>
+<status status="PASS" start="2024-06-27T13:49:15.164701" elapsed="6.579942"/>
+</test>
+<status status="PASS" start="2024-06-27T13:49:15.023357" elapsed="6.722038"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Home">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,30 +1,35 @@
 *** Settings ***
 Library        AppiumLibrary
-Variables       ../Screens/tela_inicial.py
+Variables       ../Screens/home.py
 
 *** Variables ***
 @{finger}       Create List    274    247  # Coordenadas do ponto de clique pix
 *** Keywords ***
 
-botao acessar_conta
-
-   Wait Until Page Contains Element       ${btn_acessar_conta}  40
-   Click Element                          ${btn_acessar_conta}   
-
-botao criar_conta_conta
-
-   Wait Until Page Contains Element       ${btn_acessar_conta}  40
-   Click Element                          ${btn_acessar_conta}
-
 
 botao pix
+   Wait Until Page Contains Element       ${btnPix}  40
+   Click Element                          ${btnPix}
 
-   Wait Until Page Contains Element       ${BTN_PIX }  40
-   Click Element                          ${BTN_PIX }
+texto Area Pix
+     Wait Until Page Contains Element         ${txtPix}  40
+    Capture Page Screenshot 
 
-botao minhaConta
 
-   Wait Until Page Contains Element       ${btn_minhaConta}  40
-   Click Element                          ${btn_minhaConta}
+botao ver extrato
+    Wait Until Page Contains Element       ${btnVerExtrato}  40
+    Click Element                          ${btnVerExtrato}
+    Capture Page Screenshot 
 
- 
+texto Extrato
+     Wait Until Page Contains Element         ${txtExtrato}  40
+    Capture Page Screenshot 
+
+botao transferencia
+    Wait Until Page Contains Element       ${btnTransferenciashome}  40
+    Click Element                          ${btnTransferenciashome}
+    Capture Page Screenshot 
+
+texto transferencia
+     Wait Until Page Contains Element         ${txtTansferencia}  40
+    Capture Page Screenshot     

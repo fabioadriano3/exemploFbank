@@ -17,14 +17,10 @@ botao criar_conta_conta
    Click Element                          ${btn_acessar_conta}
 
 
-botao pix
 
-   Wait Until Page Contains Element       ${BTN_PIX }  40
-   Click Element                          ${BTN_PIX }
+#botao minhaConta
 
-botao minhaConta
-
-   Wait Until Page Contains Element       ${btn_minhaConta}  40
-   Click Element                          ${btn_minhaConta}
+ #  Wait Until Page Contains Element       ${btn_minhaConta}  40
+  # Click Element                          ${btn_minhaConta}
 
  

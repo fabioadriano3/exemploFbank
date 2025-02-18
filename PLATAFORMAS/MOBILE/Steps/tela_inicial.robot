@@ -9,5 +9,4 @@ Resource        ../PageObjects/tela_inicial.robot
 clicar no botao acessar_conta
    botao acessar_conta
 
-clicar no botao criar_conta  
-   botao criar_conta_conta    
+  

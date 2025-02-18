@@ -11,10 +11,7 @@ botao acessar_conta
    Wait Until Page Contains Element       ${btn_acessar_conta}  40
    Click Element                          ${btn_acessar_conta}   
 
-botao criar_conta_conta
 
-   Wait Until Page Contains Element       ${btn_acessar_conta}  40
-   Click Element                          ${btn_acessar_conta}
 
 
 

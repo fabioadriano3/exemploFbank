@@ -1,13 +1,14 @@
 *** Settings ***
 
 Library        AppiumLibrary
-Resource        ../PageObjects/tela_inicial.robot
+Resource        ../PageObjects/criar_conta.robot
 
 
 *** Keywords ***
 
-clicar no botao acessar_conta
-   botao acessar_conta
+
+
+ 
 
 clicar no botao criar_conta  
-   botao criar_conta_conta    
+   botao criar_conta_conta  

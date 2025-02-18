@@ -9,9 +9,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "appium": "^2.5.4"
+    "appium": "^1.22.3"
   },
   "devDependencies": {
-    "appium-uiautomator2-driver": "^3.5.0"
+    "appium-uiautomator2-driver": "^2.2.0"
   }
 }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on darwin)" generated="2025-02-18T09:33:18.327011" rpa="false" schemaversion="5">
+<suite id="s1" name="Criar Conta" source="/Users/arklok/Documents/Qa/projeto/fbank/PLATAFORMAS/MOBILE/feature/criar_conta.robot">
+<test id="s1-t1" name="Validar cpf invalido" line="14">
+<kw name="Abrindo o app" owner="startconnect" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-02-18T09:33:18.371986" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-02-18T09:33:18.371802" elapsed="0.000972">No application is open</status>
+</kw>
+<msg time="2025-02-18T09:33:18.373171" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-02-18T09:33:18.373253" level="FAIL">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</msg>
+<arg>http://localhost:4723</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>app=/Users/arklok/Downloads/APK/app-release_4.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-02-18T09:33:18.367716" elapsed="0.005826">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</kw>
+<status status="FAIL" start="2025-02-18T09:33:18.367480" elapsed="0.006127">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</kw>
+<kw name="close session" owner="startconnect" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-02-18T09:33:18.373941" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-02-18T09:33:18.373891" elapsed="0.000221">No application is open</status>
+</kw>
+<msg time="2025-02-18T09:33:18.374389" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-02-18T09:33:18.374448" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-02-18T09:33:18.373826" elapsed="0.000724">No application is open</status>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-02-18T09:33:18.374684" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-02-18T09:33:18.374639" elapsed="0.000188">No application is open</status>
+</kw>
+<msg time="2025-02-18T09:33:18.375109" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-02-18T09:33:18.375153" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-02-18T09:33:18.374587" elapsed="0.000653">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-02-18T09:33:18.373730" elapsed="0.001553">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<status status="FAIL" start="2025-02-18T09:33:18.367264" elapsed="0.008049">Setup failed:
+WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<status status="FAIL" start="2025-02-18T09:33:18.327462" elapsed="0.048012"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Criar Conta">Criar Conta</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-18T09:33:18.373171" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-02-18T09:33:18.374389" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-02-18T09:33:18.375109" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

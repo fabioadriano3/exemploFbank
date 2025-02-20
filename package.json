@@ -8,10 +8,8 @@
   "author": "Fabio Adriano",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "appium": "^1.22.3"
-  },
   "devDependencies": {
-    "appium-uiautomator2-driver": "^2.2.0"
+    "appium": "^2.15.0",
+    "appium-uiautomator2-driver": "^4.0.1"
   }
 }

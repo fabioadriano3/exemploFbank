@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on darwin)" generated="2025-02-21T10:53:55.942920" rpa="false" schemaversion="5">
+<suite id="s1" name="Criar Conta" source="/Users/resource.frodrigues/Documents/Projeto Potencia/exemploFbank/PLATAFORMAS/MOBILE/feature/criar_conta.robot">
+<test id="s1-t1" name="Validar cpf valido" line="15">
+<kw name="Abrindo o app" owner="startconnect" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>app=/Users/resource.frodrigues/Downloads/app-release 3.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.909627" elapsed="0.000173"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.907961" elapsed="0.002391"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Teste de criação de conta com CPF válido</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.910624" elapsed="0.000086"/>
+</kw>
+<kw name="clicar no botao criar_conta" owner="criar_conta">
+<kw name="botao criar_conta_conta" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${btn_Criar_conta}</arg>
+<arg>40</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.911379" elapsed="0.000101"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${btn_Criar_conta}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.911593" elapsed="0.000046"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.911181" elapsed="0.000503"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.910927" elapsed="0.000790"/>
+</kw>
+<kw name="Clicar e aceitar o termo de aceite" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${termoAceite}</arg>
+<arg>30</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.912066" elapsed="0.000085"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${termoAceite}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.912258" elapsed="0.000045"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.911871" elapsed="0.000473"/>
+</kw>
+<kw name="Clicar no botao ok de termos de aceite" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${botaoOk}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.912759" elapsed="0.000090"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="AppiumLibrary">
+<arg>${botaoOk}</arg>
+<doc>Verifies that element identified with locator is enabled.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.912986" elapsed="0.000071"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_completa.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.913173" elapsed="0.000082"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${botaoOk}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.913432" elapsed="0.000067"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_dePermisaoDeLocalizacao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.913644" elapsed="0.000069"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.912513" elapsed="0.001249"/>
+</kw>
+<kw name="Clicar no botao de permisao de localizaçao" owner="criar_conta">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${botaoLocalizacao}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.914205" elapsed="0.000071"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_Localizacao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.914393" elapsed="0.001323"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${botaoLocalizacao}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.915902" elapsed="0.000082"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_dePermisaoDeLocalizacao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.916093" elapsed="0.000067"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${botaoLocalizacao}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.916265" elapsed="0.000045"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.913971" elapsed="0.002384"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.916577" elapsed="0.000071"/>
+</kw>
+<kw name="Validar texto qual seu cpf" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${validarTextQualCpf}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.917076" elapsed="0.000063"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>qual_seu_CPF1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.917247" elapsed="0.000065"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<arg>${validarTextQualCpf}</arg>
+<arg>Diz pra gente qual é seu CPF</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.917418" elapsed="0.000064"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>qual_seu_CPF2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.917768" elapsed="0.000140"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.916858" elapsed="0.001136"/>
+</kw>
+<kw name="Clicar no campo e Digitar Cpf Valido" owner="criar_conta">
+<kw name="Gerar CPF Valido" owner="gerarCpf">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${cpf_base}</var>
+<arg>[random.randint(0,9) for _ in range(9)]</arg>
+<arg>random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.919086" elapsed="0.000085"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${digito1}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.919293" elapsed="0.000051"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${digito1}</var>
+<arg>${digito1} + (${cpf_base}[${i}] * (10 - ${i}))</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.919592" elapsed="0.000061"/>
+</kw>
+<var name="${i}"/>
+<status status="PASS" start="2025-02-21T10:53:56.919492" elapsed="0.000201"/>
+</iter>
+<var>${i}</var>
+<value>9</value>
+<status status="PASS" start="2025-02-21T10:53:56.919412" elapsed="0.001300"/>
+</for>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${digito1}</var>
+<arg>${digito1} * 10 % 11 % 10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.920860" elapsed="0.000054"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${cpf_base}</arg>
+<arg>${digito1}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.921026" elapsed="0.000052"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${digito2}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.921188" elapsed="0.000044"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${digito2}</var>
+<arg>${digito2} + (${cpf_base}[${i}] * (11 - ${i}))</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.921451" elapsed="0.000048"/>
+</kw>
+<var name="${i}"/>
+<status status="PASS" start="2025-02-21T10:53:56.921358" elapsed="0.000179"/>
+</iter>
+<var>${i}</var>
+<value>10</value>
+<status status="PASS" start="2025-02-21T10:53:56.921287" elapsed="0.000281"/>
+</for>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${digito2}</var>
+<arg>${digito2} * 10 % 11 % 10</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.921673" elapsed="0.000045"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${cpf_base}</arg>
+<arg>${digito2}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.921818" elapsed="0.000048"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<var>${cpf}</var>
+<arg>''.join(map(str, ${cpf_base}))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.921970" elapsed="0.000059"/>
+</kw>
+<return>
+<value>${cpf}</value>
+<status status="PASS" start="2025-02-21T10:53:56.922078" elapsed="0.000019"/>
+</return>
+<var>${cpf}</var>
+<status status="PASS" start="2025-02-21T10:53:56.918854" elapsed="0.003286"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${dgtCpf}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.922244" elapsed="0.000061"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_cpf.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.922407" elapsed="0.000066"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${dgtCpf}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.922572" elapsed="0.000042"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>${dgtCpf}</arg>
+<arg>${cpf}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.922710" elapsed="0.000046"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain" owner="AppiumLibrary">
+<arg>Este CPF está incorreto ou não existe</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until `text` disappears from current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.922859" elapsed="0.000077"/>
+</kw>
+<kw name="Page Should Not Contain Text" owner="AppiumLibrary">
+<arg>${valiadarTextoCpfIncorrereto}</arg>
+<arg>Este CPF está incorreto ou não existe</arg>
+<doc>Verifies that current page not contains `text`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.923040" elapsed="0.000071"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_cpfValido.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.923214" elapsed="0.000059"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.918418" elapsed="0.004895"/>
+</kw>
+<kw name="Clicar no avancar" owner="criar_conta">
+<kw name="Element Should Be Enabled" owner="AppiumLibrary">
+<arg>${botaoAvancar}</arg>
+<doc>Verifies that element identified with locator is enabled.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.923729" elapsed="0.000058"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${botaoAvancar}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.923888" elapsed="0.000044"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_deCpf.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.924027" elapsed="0.000059"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.923523" elapsed="0.000604"/>
+</kw>
+<kw name="close session" owner="startconnect" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.924593" elapsed="0.000044"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.924737" elapsed="0.000035"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.924367" elapsed="0.000445"/>
+</kw>
+<tag>criar_conta</tag>
+<tag>positivo</tag>
+<status status="PASS" start="2025-02-21T10:53:56.907229" elapsed="0.017656"/>
+</test>
+<test id="s1-t2" name="Validar cpf invalido" line="27">
+<kw name="Abrindo o app" owner="startconnect" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>app=/Users/resource.frodrigues/Downloads/app-release 3.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.925665" elapsed="0.000084"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.925468" elapsed="0.000338"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Teste de criação de conta com CPF inválido</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.925952" elapsed="0.000058"/>
+</kw>
+<kw name="clicar no botao criar_conta" owner="criar_conta">
+<kw name="botao criar_conta_conta" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${btn_Criar_conta}</arg>
+<arg>40</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.926552" elapsed="0.000082"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${btn_Criar_conta}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.926739" elapsed="0.000045"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.926374" elapsed="0.000451"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.926164" elapsed="0.000693"/>
+</kw>
+<kw name="Clicar e aceitar o termo de aceite" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${termoAceite}</arg>
+<arg>30</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.927198" elapsed="0.000078"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${termoAceite}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.927451" elapsed="0.000045"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.927005" elapsed="0.000531"/>
+</kw>
+<kw name="Clicar no botao ok de termos de aceite" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${botaoOk}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.927901" elapsed="0.000058"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="AppiumLibrary">
+<arg>${botaoOk}</arg>
+<doc>Verifies that element identified with locator is enabled.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.928061" elapsed="0.000054"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_completa.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.928213" elapsed="0.000060"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${botaoOk}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.928371" elapsed="0.000042"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_dePermisaoDeLocalizacao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.928509" elapsed="0.000058"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.927711" elapsed="0.000898"/>
+</kw>
+<kw name="Clicar no botao de permisao de localizaçao" owner="criar_conta">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${botaoLocalizacao}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.929250" elapsed="0.000072"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_Localizacao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.929434" elapsed="0.000064"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${botaoLocalizacao}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.929601" elapsed="0.000056"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_dePermisaoDeLocalizacao.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.929754" elapsed="0.000057"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${botaoLocalizacao}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.929906" elapsed="0.000041"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.928807" elapsed="0.001180"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.930120" elapsed="0.000051"/>
+</kw>
+<kw name="Validar texto qual seu cpf" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${validarTextQualCpf}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.930515" elapsed="0.000056"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>qual_seu_CPF1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.930669" elapsed="0.000057"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<arg>${validarTextQualCpf}</arg>
+<arg>Diz pra gente qual é seu CPF</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.930822" elapsed="0.000058"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>qual_seu_CPF2.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.930976" elapsed="0.000054"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.930335" elapsed="0.000734"/>
+</kw>
+<kw name="Clicar no campo e Digitar Cpf invalido" owner="criar_conta">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${dgtCpf}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.931406" elapsed="0.000053"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_cpf.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.931554" elapsed="0.000057"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${dgtCpf}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.931703" elapsed="0.000040"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>${dgtCpf}</arg>
+<arg>27635487654</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.931835" elapsed="0.000043"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<arg>tela_cpfInvalido.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.931971" elapsed="0.000055"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.931229" elapsed="0.000835"/>
+</kw>
+<kw name="Validar texto de cpf invalido" owner="criar_conta">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${valiadarTextoCpfIncorrereto}</arg>
+<arg>4</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.932431" elapsed="0.000158"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<arg>${valiadarTextoCpfIncorrereto}</arg>
+<arg>Este CPF está incorreto ou não existe</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.932742" elapsed="0.000074"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.932236" elapsed="0.000755"/>
+</kw>
+<kw name="close session" owner="startconnect" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.934159" elapsed="0.000070"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-02-21T10:53:56.934354" elapsed="0.000036"/>
+</kw>
+<status status="PASS" start="2025-02-21T10:53:56.933704" elapsed="0.000728"/>
+</kw>
+<tag>criar_conta</tag>
+<tag>negativo</tag>
+<status status="PASS" start="2025-02-21T10:53:56.925134" elapsed="0.009396"/>
+</test>
+<status status="PASS" start="2025-02-21T10:53:55.947614" elapsed="0.987344"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">criar_conta</stat>
+<stat pass="1" fail="0" skip="0">negativo</stat>
+<stat pass="1" fail="0" skip="0">positivo</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Criar Conta">Criar Conta</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,12 +1,22 @@
 *** Settings ***
 Library        AppiumLibrary
+Library    FakerLibrary
 Library    Process
 Variables       ../Screens/criar_conta.py
-Variables       ../../MOBILE/Screens/criar_conta.py 
+#Variables       ../../MOBILE/Screens/criar_conta.py 
+#Resource   ../Resources/gerarCpf.robot
 
+Variables      ../Screens/criar_conta.py  # Importa a variável dgtCpf
+Resource       ../Resources/gerarCpf.robot
+
+
+
+     
+     
 *** Variables ***
-
+    
 *** Keywords ***
+
 
 botao criar_conta_conta  
 
@@ -46,16 +56,18 @@ Validar texto qual seu cpf
    Capture Page Screenshot                 qual_seu_CPF2.png
    
 Clicar no campo e Digitar Cpf Valido
-
+    ${cpf}    Gerar CPF Valido   # Aqui chamamos o keyword para gerar o CPF
    Wait Until Element Is Visible        ${dgtCpf}  
    Capture Page Screenshot                 tela_cpf.png
    Click Element                           ${dgtCpf}
-   Input Text                              ${dgtCpf}    25390458044
+   Input Text                              ${dgtCpf}   ${cpf}
+   Wait Until Page Does Not Contain    Este CPF está incorreto ou não existe    timeout=10s
+   Page Should Not Contain Text            ${valiadarTextoCpfIncorrereto}    Este CPF está incorreto ou não existe   
    Capture Page Screenshot                 tela_cpfValido.png
    
 Clicar no campo e Digitar Cpf invalido
 
-  Wait Until Element Is Visible        ${dgtCpf}  
+  Wait Until Element Is Visible            ${dgtCpf}  
    Capture Page Screenshot                 tela_cpf.png
    Click Element                           ${dgtCpf}
    Input Text                              ${dgtCpf}    27635487654

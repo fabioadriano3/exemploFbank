@@ -13,7 +13,8 @@ Test Teardown   close session
 
 
 Validar cpf valido 
- 
+   [Tags]    criar_conta    positivo
+     Log    Teste de CPF válido    
   clicar no botao criar_conta 
   Clicar e aceitar o termo de aceite 
   Clicar no botao ok de termos de aceite
@@ -24,6 +25,8 @@ Validar cpf valido
   Clicar no avancar 
   
 Validar cpf invalido 
+  [Tags]    criar_conta    negativo
+    Log    Teste de criação de conta com CPF inválido
  
   clicar no botao criar_conta 
   Clicar e aceitar o termo de aceite 

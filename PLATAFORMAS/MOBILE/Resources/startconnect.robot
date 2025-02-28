@@ -1,6 +1,6 @@
 *** Settings ***
 
-Library        AppiumLibrary
+Library       AppiumLibrary
 Library    Screenshot
 
 
@@ -9,13 +9,13 @@ Library    Screenshot
 
 Abrindo o app
   
-    Open Application    http://localhost:4723
+    #Open Application    http://127.0.0.1:4723
+    Open Application    http://127.0.0.1:4723
     ...                 platformName=android 
     ...                 deviceName=Android Emulator
     ...                 automationName=UIAutomator2
    # ...                 app=/Users/arklok/Documents/Qa/projeto/fbank/PLATAFORMAS/MOBILE/app/android/FBANk.apk
-    ...                  app=/Users/arklok/Downloads/APK/app-release_4.apk             
-       
+    ...                  app=/Users/resource.frodrigues/Downloads/app-release 3.apk
           
 
 close session
